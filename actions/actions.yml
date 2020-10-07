@@ -1,0 +1,14 @@
+name: "Hello World!"
+description: "Greet the world"
+author: "JD"
+
+inputs:
+  INPUT_MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
