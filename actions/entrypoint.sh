@@ -1,3 +1,5 @@
-#!/bin/bash -x
+#!/bin/sh -l
 
-echo "Hello everyone, I'm $MY_NAME and this is my first GitHub Action!"
+echo "Hello $1"
+time=$(date)
+echo "::set-output name=time::$time
